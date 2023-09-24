@@ -22,4 +22,17 @@ To create a virtual environment in Python, you can use the venv module, which is
   ```bash
   myenv\Scripts\activate
   ```
+  - On macOS and Linux:
+  ```bash
+  source myenv/bin/activate
+  ```
+  After activation, your command prompt or terminal should indicate that you are now working within the virtual environment.
+
+- You can now install Python packages and run Python scripts within the virtual environment, and they will be isolated from the system Python installation.
+
+- To deactivate the virtual environment and return to the system Python, simply run the following command:
+  ```bash
+  deactivate
+  ```
+- Remember to activate the virtual environment whenever you work on a project that requires it.
   
