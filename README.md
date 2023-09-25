@@ -66,7 +66,7 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   ```bash
   deactivate
   ```
-- Once your virtual environment is activated, use the following command to generate a list of installed packages and their versions:
+- Once your virtual environment is activated, you could use the following command to generate a list of installed packages and their versions (just for FYI):
   ```bash
   pip freeze
   ```  
@@ -79,9 +79,9 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   ```bash
   pip install python-binance
   ```
-## 3. Run the Bot
+## 3. Run the Bot (<ins>Without Docker</ins>)
 
-- To run your bot locally without Docker and considering the location of the .env file and the main script VolatilityBot.py, you'll need to adjust the paths in the code to correctly access the .env file. Since the .env file is located one step outside of the main script directory, you can use the `os` module to construct the full path to the .env file dynamically. Here are the changes you should make:
+- To run your bot locally without Docker and considering the location of the `.env` file and the main script `VolatilityBot.py`, you'll need to adjust the paths in the code to correctly access the `.env` file. Since the `.env` file is located one step outside of the main script directory, you can use the `os` module to construct the full path to the .env file dynamically. Here are the changes you should make:
   
    - Modify the VolatilityBot.py script to access the .env file using a dynamic path based on the script's location:
      Inside the main code go to line 16 (under `import json`) and paste:
