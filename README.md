@@ -135,6 +135,9 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   
   ![portainerBinanceBot](https://github.com/geobla/binanceVolatilityBot/assets/99928380/7cbd8b3a-8cec-4d40-bb89-9e32cf0571d1)
 
+## Risk Considerations
+Cryptocurrency trading involves inherent risks, including price volatility and market fluctuations. It's essential to exercise caution and conduct thorough testing before using this bot with real funds. Consider running the bot in a test environment (e.g., [Binance's Testnet](https://testnet.binance.vision/)) to evaluate its performance.
+
 
 
 
