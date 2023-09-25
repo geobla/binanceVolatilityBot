@@ -70,10 +70,33 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   pip freeze
   ```  
 - Remember to activate the virtual environment whenever you work on a project that requires it.
+
 ## 2. Install Dependencies
+
 - Install the <code>python-binance</code> library, which is a Python wrapper for the Binance API. You can use the following pip command:
   
   ```bash
   pip install python-binance
   ```
+## 3. Run the Bot
+
+- To run your bot locally without Docker and considering the location of the .env file and the main script VolatilityBot.py, you'll need to adjust the paths in the code to correctly access the .env file. Since the .env file is located one step outside of the main script directory, you can use the `os` module to construct the full path to the .env file dynamically. Here are the changes you should make:
+  
+   - Modify the VolatilityBot.py script to access the .env file using a dynamic path based on the script's location:
+     Inside the main code go to line 16 (under `import json`) and paste:
+  ```python
+  import os
+  # Determine the full path to the .env file
+  script_dir = os.path.dirname(os.path.abspath(__file__))
+  env_file_path = os.path.join(script_dir, '..', '.env')
+  ```
+   - In the code above, we use `os.path.abspath(__file__)` to get the absolute path of the script, and then we construct the path to the .env file by going one step up from the script directory.
+
+   - When running the bot, you should navigate to the `src` directory before executing the script. If you are currently in the binanceVolatilityBot directory, you can use the following command:
+  ```bash
+  cd src
+  python3 VolatilityBot.py
+  ```
+  - With these changes, your script should be able to access the `.env` file correctly, even if it's located one step outside of the src directory where 
+    `VolatilityBot.py` is located.
 ![BinanceVolatilityBot](https://github.com/geobla/binanceVolatilityBot/assets/99928380/f8fb6175-755b-4955-a2ad-588e3a3d10ed)
