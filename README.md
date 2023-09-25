@@ -34,6 +34,10 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   ```bash
   deactivate
   ```
+- Once your virtual environment is activated, use the following command to generate a list of installed packages and their versions:
+  ```bash
+  pip freeze
+  ```  
 - Remember to activate the virtual environment whenever you work on a project that requires it.
 ## 2. Install Dependencies
 - Install the <code>python-binance</code> library, which is a Python wrapper for the Binance API. You can use the following pip command:
