@@ -6,10 +6,10 @@ This Python-based cryptocurrency trading bot leverages the Binance API to automa
 ## Key Features
 
 ### Pairing Currencies: 
-The bot allows you to select the currency or fiat currency with which each cryptocurrency is paired. By default, it pairs cryptocurrencies with 'USDT' (Tether), a commonly used stablecoin.
+The bot allows you to select the currency or fiat currency with which each cryptocurrency is paired. By default, it pairs cryptocurrencies with `'USDT'` (Tether), a commonly used stablecoin.
 
 ### Trade Size: 
-You can define the size of each trade, typically in USDT, using the QUANTITY parameter. Be cautious when changing the pairing currency, as this affects the trade size calculation.
+You can define the size of each trade, typically in USDT, using the `QUANTITY` parameter. Be cautious when changing the pairing currency, as this affects the trade size calculation.
 
 ### Excluded Pairs: 
 The bot provides the flexibility to exclude specific currency pairs from trading. By default, it excludes popular fiat pairs and some margin keywords.
@@ -18,7 +18,7 @@ The bot provides the flexibility to exclude specific currency pairs from trading
 The bot monitors the price difference for each cryptocurrency over a specified time period (default is 5 minutes). It considers coins that have moved by a certain percentage (default is 3%) as potential buy signals.
 
 ### Stop Loss and Take Profit: 
-The bot includes risk management features such as stop loss and take profit percentages. If a coin's price moves beyond these thresholds, the bot will automatically sell the coin to limit losses or secure profits.
+The bot includes risk management features such as `Stop Loss` and `Take Profit` percentages. If a coin's price moves beyond these thresholds, the bot will automatically sell the coin to limit losses or secure profits.
 
 ### Portfolio Tracking: 
 The bot maintains a portfolio of coins bought during trading. It tracks essential details such as the purchase price, volume, and order ID for each coin.
