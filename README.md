@@ -101,3 +101,40 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   - With these changes, your script should be able to access the `.env` file correctly, even if it's located one step outside of the src directory where 
     `VolatilityBot.py` is located.
 ![BinanceVolatilityBot](https://github.com/geobla/binanceVolatilityBot/assets/99928380/f8fb6175-755b-4955-a2ad-588e3a3d10ed)
+
+## 4. Run the Bot (<ins>With Docker</ins>)
+- Go to your preferred directory.
+- Inside the directory `git clone` the repository:
+  ```bash
+  git clone https://github.com/geobla/binanceVolatilityBot.git
+  ```
+- or download the [zip folder](https://github.com/geobla/binanceVolatilityBot/archive/refs/heads/main.zip) to your directory.
+- Change the fake `API Keys` with your Private Spot or TestNet Binance Keys (<ins>Please start with TestNet to get familiar with the Bot</ins>) in the `.env` file.
+- Make sure that you are inside the correct directory:
+  ```bash
+  pwd
+  ```
+  It should end with `binanceVolatilityBot`.
+- Build and Run the Docker Image.
+  To build and run your Docker image, use the commands.
+
+  ```bash
+  docker build -t my-binance-app .
+  ```
+  ```bash
+  docker run -itd --env-file .env --name my-binance-app my-binance-app
+  ``` 
+  You can combine the `-it` and `-d` options in the docker run command to run your container in detached mode (-d) while also enabling an interactive terminal (-it). 
+  This way, you can have the benefits of both detached mode and interactive mode for viewing logs.
+- How to check the logs (Trades).
+  ```bash
+  docker logs my-binance-app
+  ```
+- Or better install [Portainer](https://docs.portainer.io/start/install-ce/server/docker/linux) (if not already) and go to the my-binance-app container log and see the 
+  results.
+  
+  ![portainerBinanceBot](https://github.com/geobla/binanceVolatilityBot/assets/99928380/7cbd8b3a-8cec-4d40-bb89-9e32cf0571d1)
+
+
+
+
