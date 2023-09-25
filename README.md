@@ -41,3 +41,4 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   ```bash
   pip install python-binance
   ```
+![BinanceVolatilityBot](https://github.com/geobla/binanceVolatilityBot/assets/99928380/f8fb6175-755b-4955-a2ad-588e3a3d10ed)
