@@ -39,9 +39,10 @@ To create a virtual environment in Python, you can use the <code>venv</code> mod
   ```bash
   git clone https://github.com/geobla/binanceVolatilityBot.git
   ```
-- or download the [zip folder](https://github.com/geobla/binanceVolatilityBot/archive/refs/heads/main.zip) to your directory. 
+- or download the [zip folder](https://github.com/geobla/binanceVolatilityBot/archive/refs/heads/main.zip) to your directory.
+- Change the fake `API Keys` with your Private Spot or TestNet Binance Keys (<ins>Please start with TestNet to get familiar with the Bot</ins>) in the `.env` file.
 - Once you are in the desired directory, run the following command to create a virtual environment.
-  You can replace <code>myenv</code> with the name you want to give your virtual environment:
+  You can replace if you want <code>myenv</code> with the name you want to give your virtual environment:
   ```bash
   python3 -m venv myenv
   ```
